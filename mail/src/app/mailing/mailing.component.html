@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<table>
+  <thead>
+    <th>Email Address</th>
+    <th>Importance</th>
+    <th>Subject</th>
+    <th>Content Preview</th>
+  </thead>
+  <tr *ngFor = "let mail of emails">
+    <td>{{mail.eAddress}}</td>
+    <td><span *ngIf="mail.important">HIGH</span><span *ngIf="!mail.important">low</span></td>
+    <td>{{mail.subject}}</td>
+    <td>{{mail.content}}</td>
+  </tr>
+</table>
