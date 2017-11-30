@@ -1,0 +1,5 @@
+<h3>{{title}}</h3>
+<div *ngFor="let button of buttons; let idx = index" class = "switch">
+  <button (click) = "button_function(idx)" *ngIf="button" class = "on">ON</button>
+  <button (click) = "button_function(idx)" *ngIf="!button" class = "off">OFF</button>
+</div>
