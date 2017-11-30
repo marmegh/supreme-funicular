@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: auto;
+}
+.code{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 0;
+}
+.orange{background-color: rgb(187, 120, 5)}
+.red {background-color: rgb(187, 103, 103)}
+.yellow {background-color: rgb(193, 196, 14)}
+.green {background-color: rgb(32, 179, 98)}
+.blue {background-color: rgb(49, 86, 146)}
+.indigo {background-color: rgb(132, 31, 209)}
+.violet {background-color: rgb(216, 17, 216)}

@@ -21,5 +21,7 @@ export class UserComponentComponent implements OnInit {
       email: "Lizzie@g.com",
     }];
   }
-
+  button_function(){
+    this.other_names.push({first_name: "Nathan", last_name: "James", email: "nathan.james@gmail.com", important: true});
+  }
 }
