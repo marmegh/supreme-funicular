@@ -1,0 +1,3 @@
+<h1>{{title}}</h1>
+<app-qgen (create_event) = "create_quote($event)"></app-qgen>
+<app-qlist *ngFor="let quote of quotes" [some_quote] = "quote" (up_event)="upVote($event)" (down_event)="downVote($event)" (delete_event)="delete($event)"></app-qlist>

@@ -1,5 +1,6 @@
 <h1>Users</h1>
 <h3>{{ my_name }}</h3>
+<app-user-details *ngFor="let user of other_names" [some_user] = "user"></app-user-details>
 <ul>
   <li *ngFor="let other of other_names">{{other | json}}</li>
 </ul>
@@ -15,4 +16,4 @@
     <td>{{other.email}}</td>
   </tr>
 </table>
-<button (click)= "button_function()">Add USer</button>
+<app-user-create (create_event)="create_user($event)"></app-user-create>

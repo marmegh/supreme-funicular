@@ -1,0 +1,9 @@
+<form (submit)="create_user()" #my_form="ngForm">
+    <p>First name: <input type="text" name="first_name" [(ngModel)]="new_user.first_name" required minlength="2" #first_name_input="ngModel"> 
+      <span *ngIf="!first_name_input.valid">Enter a valid name!</span>
+    </p>
+    <p>Last name: <input type="text" name="last_name" [(ngModel)]="new_user.last_name"></p>
+    <p>Email: <input type="text" name="email" [(ngModel)]="new_user.email"></p>
+    <p>Important: <input type="checkbox" name="important" [(ngModel)]="new_user.important"></p>
+    <input type="submit" value="Create User" [disabled] = "!my_form.valid">
+</form>

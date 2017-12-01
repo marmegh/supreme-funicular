@@ -1,0 +1,7 @@
+div{
+    border: 5px dashed pink;
+    margin: 10px;
+}
+.important{
+    background-color: rgb(74, 196, 145);
+}

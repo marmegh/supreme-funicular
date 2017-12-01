@@ -1,0 +1,14 @@
+<div class = "box">
+  <div class = "quote">
+    <p>{{some_quote.text}}</p>
+    <p> - {{some_quote.author}}</p>
+  </div>
+  <div class = "R">
+    <h2>+ {{some_quote.votes}}</h2>
+  </div>
+  <div class = "UD">
+    <button class = "up" (click)="upVote()">Vote Up</button>
+    <button class = "down" (click)="downVote()">Vote Down</button>
+    <button class = "delete" (click)="delete()">Delete</button>
+  </div>
+</div>
