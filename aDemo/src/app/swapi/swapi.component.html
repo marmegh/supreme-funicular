@@ -1,0 +1,11 @@
+<ul>
+  <li>Name: {{this_character.name}} </li>
+  <li>Height: {{this_character.height}} </li>
+  <li>Mass: {{this_character.mass}} </li>
+  <li>Eye Color: {{this_character.eye_color}} </li>
+  <li>Other: {{this_character.other}} </li>
+</ul>
+<form (submit) = "get_new_character()">
+  <input type="number" name="char_id" [(ngModel)]="char_id">
+  <input type="submit" value="SWAPIfy">
+</form>

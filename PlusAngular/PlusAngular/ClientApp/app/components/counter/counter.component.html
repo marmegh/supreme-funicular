@@ -1,0 +1,10 @@
+<h1>Counter</h1>
+
+<p>This is a simple example of an Angular component.</p>
+
+<p>Current count: <strong>{{ currentCount }}</strong></p>
+<ul *ngFor="let item of list">
+    <li >{{item}}</li>
+</ul>
+
+<button (click)="incrementCounter()">Increment</button>
