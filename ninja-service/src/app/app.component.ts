@@ -7,11 +7,11 @@ import { NinjaService } from './ninja.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent{
-  title = 'app';
-  getGold(){};
+  getGold(){
+    return this._ninjaService.gold;
+  };
 
   constructor(private _ninjaService: NinjaService) 
   {
-    this.getGold = _ninjaService.retrieveGold;
   }
 }
